@@ -1,11 +1,17 @@
 import './App.css';
+import Navbar from './component/Navbar';
+import Textform from './component/Textform';
 
 
 function App() {
-  return(<>
-  <h1>my first react app</h1>
-  <div className='Maindiv' backGroundColor='red' ></div>
-  </>);
+  return(
+    <> 
+      <Navbar title="nNexus"  home="Home"/> 
+      <div className="container">
+        <Textform header="Enter Your Text Here" />
+      </div>
+    </>
+  );
 }
 
 export default App;
